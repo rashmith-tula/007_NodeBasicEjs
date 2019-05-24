@@ -1,0 +1,15 @@
+
+<% include partials/header %>
+
+<!--<base href="/">-->
+<link rel="stylesheet" type="text/css" href="/posts.css">
+
+<h1>Below are the list of most important spiritual books one needs in his/her life</h1>
+
+<% posts.forEach(function(post){%>
+  <li>
+    <span><%= post.title %></span> - <strong> <%= post.author.toUpperCase() %></strong>    
+  </li>
+<% }) %>
+
+<% include partials/footer %>
